@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    background: #101820;
+    padding: 15px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #4CC9F0;
+}
+
+/* Hero (Home) */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#101820e6, #101820e6), url('https://via.placeholder.com/1200') center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: #4CC9F0;
+}
+
+
+/* About */
+.about {
+    padding: 50px 100px;
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 50px 100px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #101820;
+    color: white;
+    margin-top: 40px;
+}
